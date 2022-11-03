@@ -1,0 +1,8 @@
+useDynLib(cmbClust, .registration = TRUE)
+importFrom("stats", "dist")
+importFrom("parallel", "detectCores", "makeCluster", "clusterSetRNGStream","clusterExport", "parLapply","stopCluster")
+importFrom("graphics", "contour", "legend", "mtext", "par", "plot", "points")
+importFrom("stats", "dnorm")
+export(cmb.search)
+export(cmb.em)
+export(cmb.plot)
